@@ -54,7 +54,6 @@ function App() {
 	}
 
 	const getFromLocalStorage = () => {
-		console.log("exec");
 		if (localStorage.list) {
 			const localList = localStorage.getItem("list").split("|");
 			let objectArray = [];
@@ -81,7 +80,7 @@ function App() {
 	Render erneut ausgeführt werden. Ein Re-Render wird z.B. durch die Änderung eines States ausgelöst.
 	*/
 	useEffect(() => {
-		setList(getFromLocalStorage());
+		setList(getFromLocalStorage() || []);
 	}, []);
 
 	/* Inhalt der Komponente */
