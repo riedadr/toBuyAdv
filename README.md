@@ -10,12 +10,17 @@ Die Eingabedaten werden in einem einzigen State als object gespeichert.
 - Repository klonen
 
 ```bash
-
 git clone https://github.com/riedadr/tobuyadv.git
 ```
 
+-  in Verzeichnis wechseln und Pakete installieren
+
 ```bash
 cd tobuy
+```
+
+```bash
+npm install
 ```
 
 - Entwicklungsumgebung starten
