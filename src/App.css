@@ -1,0 +1,72 @@
+.App {
+	width: 100%;
+	max-width: 800px;
+}
+
+.App form {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.App form input {
+	padding: 0.5rem;
+	border: 1px solid rgba(var(--text), 0.5);
+	border-radius: 0.25rem;
+	color: var(--text);
+	background-color: transparent;
+}
+.App form input[type="number"] {
+	width: 100px;
+}
+.App form input[type="text"] {
+	width: 100%;
+}
+
+.App form button {
+	min-width: 2.5rem;
+	min-height: 2.5rem;
+	width: 2.5rem;
+	height: 2.5rem;
+
+	color: var(--text);
+	background-color: rgb(var(--success));
+	border: 1px solid rgb(var(--success));
+	border-radius: 0.25rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.App form button[type="button"] {
+	background-color: rgb(var(--danger));
+	border: 1px solid rgb(var(--danger));
+}
+
+.App ul {
+	padding: 0;
+	list-style: none;
+	display: grid;
+	gap: 1rem;
+
+	max-height: calc(100vh - 4rem - 1rem - 80px - 1rem - 1rem - 3rem - 3rem);
+	overflow: auto;
+}
+
+.App li {
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	padding-left: 1rem;
+	background-color: rgb(var(--fg));
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.App li button {
+	width: 2.5rem;
+	height: 2.5rem;
+	color: var(--danger);
+	background-color: transparent;
+	border: none;
+}
